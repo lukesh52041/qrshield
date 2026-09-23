@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#090d16] text-slate-100 font-sans antialiased min-h-screen selection:bg-cyan-500/30 selection:text-cyan-200;
+  }
+}
+
+/* Custom Cyberpunk Matrix & Glow Utilities */
+.cyber-glow-accent {
+  box-shadow: 0 0 25px -5px rgba(6, 182, 212, 0.35);
+}
+
+.cyber-glow-safe {
+  box-shadow: 0 0 30px -5px rgba(16, 185, 129, 0.35);
+}
+
+.cyber-glow-danger {
+  box-shadow: 0 0 35px -5px rgba(239, 68, 68, 0.45);
+}
+
+.cyber-glow-suspicious {
+  box-shadow: 0 0 30px -5px rgba(245, 158, 11, 0.35);
+}
+
+.cyber-grid-pattern {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+/* Custom Cyber Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #090d16;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #06b6d4;
+}
